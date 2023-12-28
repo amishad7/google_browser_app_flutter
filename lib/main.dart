@@ -7,7 +7,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'home',
+      initialRoute: 'intro',
       routes: {
         'intro': (context) => const SplashScreen_(),
         'home': (context) => Mybrowser(),

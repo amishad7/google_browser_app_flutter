@@ -36,35 +36,71 @@ class _MybrowserState extends State<Mybrowser> {
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            FloatingActionButton(
-              onPressed: () async {
+            GestureDetector(
+              onTap: () async {
                 if (await inAppWebViewController!.canGoForward()) {
                   inAppWebViewController!.goForward();
                 }
               },
-              child: Icon(Icons.arrow_forward_ios),
+              child: Container(
+                height: 50,
+                width: 50,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Icons.arrow_forward_ios),
+              ),
             ),
-            FloatingActionButton(
-              onPressed: () async {
+            GestureDetector(
+              onTap: () async {
                 if (await inAppWebViewController!.canGoBack()) {
                   inAppWebViewController!.goBack();
                 }
               },
-              child: Icon(Icons.arrow_back_ios),
+              child: Container(
+                height: 50,
+                width: 50,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Icons.arrow_back_ios),
+              ),
             ),
-            FloatingActionButton(
-              onPressed: () {
+            GestureDetector(
+              onTap: () {
                 inAppWebViewController!.loadUrl(
                     urlRequest:
                         URLRequest(url: Uri.parse("https://www.google.com")));
               },
-              child: Icon(Icons.home),
+              child: Container(
+                height: 50,
+                width: 50,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Icons.home),
+              ),
             ),
-            FloatingActionButton(
-              onPressed: () {
+            GestureDetector(
+              onTap: () {
                 inAppWebViewController?.reload();
               },
-              child: Icon(Icons.refresh),
+              child: Container(
+                height: 50,
+                width: 50,
+                alignment: Alignment.center,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Icons.refresh),
+              ),
             ),
           ],
         ),

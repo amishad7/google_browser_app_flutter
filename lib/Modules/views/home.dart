@@ -96,13 +96,15 @@ class _MybrowserState extends State<Mybrowser> {
                         height: double.infinity,
                         width: double.infinity,
                         decoration: const BoxDecoration(
-                            // image: DecorationImage(
-                            //   image: AssetImage(
-                            //     "lib/App/Utils/Assets/not_connected.jpeg",
-                            //   ),
-                            //   fit: BoxFit.cover,
-                            // ),
-                            ),
+                          color: Colors.red,
+
+                          // image: DecorationImage(
+                          //   image: AssetImage(
+                          //     "lib/App/Utils/Assets/not_connected.jpeg",
+                          //   ),
+                          //   fit: BoxFit.cover,
+                          // ),
+                        ),
                       ),
                     );
             }

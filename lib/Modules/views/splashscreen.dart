@@ -21,9 +21,12 @@ class SplashScreen_ extends StatelessWidget {
         child: Container(
           height: 300,
           width: 300,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.only(topRight: Radius.circular(44)),
+            borderRadius: BorderRadius.only(),
+            border: Border.all(
+              color: Colors.white,
+            ),
             image: DecorationImage(
               image: NetworkImage(
                   'https://i.pinimg.com/564x/aa/d5/ff/aad5ff98b5af3e7d0e5c8b154c361a9c.jpg'),

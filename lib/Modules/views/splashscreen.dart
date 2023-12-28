@@ -23,9 +23,6 @@ class SplashScreen_ extends StatelessWidget {
           width: 300,
           decoration: BoxDecoration(
             color: Colors.white,
-            border: Border.all(
-              color: Colors.white,
-            ),
             image: DecorationImage(
               image: NetworkImage(
                   'https://i.pinimg.com/564x/aa/d5/ff/aad5ff98b5af3e7d0e5c8b154c361a9c.jpg'),
